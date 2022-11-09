@@ -1,0 +1,11 @@
+.drop-dwn-btn{
+  margin: 0;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.drop-dwn-header, .drop-dwn-icon{
+  margin: 0;
+}
