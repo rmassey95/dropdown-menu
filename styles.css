@@ -1,11 +1,70 @@
-.drop-dwn-btn{
+* {
   margin: 0;
+}
+
+body{
+  background-color: grey;
+}
+
+.drop-dwn-btn{
+  padding: 10px 30px;
   display: flex;
   width: fit-content;
   align-items: center;
-  padding: 10px 20px;
+  gap: 80px;
+  border-radius: 20px;
+  background-color: white;
+  transition: background-color 400ms linear;
 }
 
-.drop-dwn-header, .drop-dwn-icon{
-  margin: 0;
+.drop-dwn-container{
+  margin: 10px;
+  width: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.up-arrow{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  align-self: center;
+  padding-top: 10px;
+}
+
+.drop-dwn-menu{
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.up-arrow, .drop-dwn-menu{
+  display: none;
+}
+
+.menu-itm{
+  border-top: 1px solid rgba(126, 126, 126, 0.2);
+  border-bottom: 1px solid rgba(126, 126, 126, 0.2);
+  line-height: 60px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-menu-itm{
+  border-start-start-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.last-menu-itm{
+  border-end-end-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.last-menu-itm, .first-menu-itm{
+  border: none;
 }
